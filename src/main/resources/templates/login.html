@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>action is everything</title>
+</head>
+<body>
+<div  data-th-fragment="header">
+  <form action="/login">
+      用户名：<input type="text" name="userName"/><br/>
+      密码：<input type="text" name="password"/>
+      <input type="submit" value="提交"/>
+  </form>
+    <span th:text="${error}"></span>
+
+    <a href="/qqLoginInit">qq登录</a>
+</div>
+</body>
+</html>

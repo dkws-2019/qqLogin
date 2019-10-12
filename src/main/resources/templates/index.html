@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>action is everything</title>
+</head>
+<body>
+<div  data-th-fragment="header">
+  登录成功
+    <span th:text="${user.userName}"></span>
+        <span th:text="${user.password}"></span>
+</div>
+</body>
+</html>
